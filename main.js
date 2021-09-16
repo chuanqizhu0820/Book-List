@@ -1,3 +1,4 @@
+
 // create book class as a template of book object
 class Book {
     constructor(title, author) {
@@ -72,3 +73,49 @@ removeBtn.forEach((item) => item.addEventListener('click', () => {
     localStorage.setItem("books", JSON.stringify(booklist));
     location.reload();
 }));
+
+// switch the display properties of different sections
+
+const listShow = document.querySelector("#nav-list");
+const addShow = document.querySelector("#nav-add");
+const contactShow = document.querySelector("#nav-contact");
+
+const listSec = document.querySelector("#list");
+const addSec = document.querySelector("#add-book");
+const contactSec = document.querySelector("#contact");
+
+function showList() {
+    listSec.style.display = "block";
+    addSec.style.display = "none";
+    contactSec.style.display = "none";
+}
+
+listShow.addEventListener('click', showList);
+
+function addList() {
+    listSec.style.display = "none";
+    addSec.style.display = "block";
+    contactSec.style.display = "none";
+}
+
+addShow.addEventListener('click', addList);
+
+function contactList() {
+    listSec.style.display = "none";
+    addSec.style.display = "none";
+    contactSec.style.display = "block";
+}
+
+contactShow.addEventListener('click', contactList);
+
+// timer
+var DateTime = luxon.DateTime;
+
+function clock() {
+    const now1 = DateTime.local().toLocaleString(DateTime.DATE_MED);
+    const now2 = DateTime.local().toLocaleString(DateTime.TIME_24_WITH_SECONDS);
+    let timeHtml = `<p>${now1 + ", " + now2}</p>`;
+    document.querySelector("#clock").innerHTML = timeHtml;
+}
+
+setInterval(clock, 1000);

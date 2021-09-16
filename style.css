@@ -6,7 +6,7 @@ body {
 
 main {
     width: 60vw;
-    height: 100vh;
+    height: 97vh;
     margin-left: 50vw;
     padding-top: 0;
     transform: translate(-50%);
@@ -51,7 +51,7 @@ table {
 }
 
 form {
-    margin: 20px 0 20px 0;
+    margin-top: 12vh;
 }
 
 #add-btn {
@@ -61,4 +61,32 @@ form {
 h1 {
     font-family: "Josefin Sans";
     font-weight: bold;
+}
+
+#add-book {
+    display: none;
+}
+
+#list {
+    display: block;
+}
+
+#contact {
+    display: none;
+    margin-top: 150px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(88, 64, 64);
+    text-align: center;
+}
+
+footer p {
+    color: white;
+}
+
+#clock {
+    text-align: right;
+    margin-right: 40px;
 }
