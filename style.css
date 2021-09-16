@@ -1,0 +1,92 @@
+body {
+    text-align: center;
+    background-image: url("library.png");
+    background-repeat: no-repeat;
+}
+
+main {
+    width: 60vw;
+    height: 97vh;
+    margin-left: 50vw;
+    padding-top: 0;
+    transform: translate(-50%);
+    background-color: wheat;
+}
+
+nav {
+    padding-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav > ul > li:nth-child(1) a {
+    font-size: 25px;
+}
+
+nav > ul > li:nth-child(2) > ul {
+    margin-top: 18px;
+    margin-right: 30px;
+}
+
+.navbtn {
+    border-right: black solid 1px;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.navbtn:nth-child(3) {
+    border-right: none;
+}
+
+table {
+    color: white;
+}
+
+form {
+    margin-top: 12vh;
+}
+
+#add-btn {
+    margin-top: 5px;
+}
+
+h1 {
+    font-family: "Josefin Sans";
+    font-weight: bold;
+}
+
+#add-book {
+    display: none;
+}
+
+#list {
+    display: block;
+}
+
+#contact {
+    display: none;
+    margin-top: 150px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(88, 64, 64);
+    text-align: center;
+}
+
+footer p {
+    color: white;
+}
+
+#clock {
+    text-align: right;
+    margin-right: 40px;
+}
