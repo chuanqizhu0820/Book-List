@@ -4,6 +4,8 @@ Awesome book list
 
 A project of Microverse program 
 
+![screenshot](screenshot.png)
+
 ## Built With
 HTML CSS Javascript
 
